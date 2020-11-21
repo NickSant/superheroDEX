@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="search">
+        <input
+        [(ngModel)]="name"
+        name="name"
+        type="text"
+        class="search-bar"
+        placeholder="Search for a Hero"
+      />
+
+      <button (click)="searchHero()" class="search-button"><img src="../../assets/lupa.svg" alt="Search"/></button>
+    </div>
+    
+    <div *ngIf="resposta" class="container">
+      <h2 class="title"> Results for "{{ name }}"</h2>
+
+      <div class="heroes-list">
+        <app-hero-tiny-card (click)="storeHeroInfo(result)" *ngFor="let result of resposta.results" [infos]="result"></app-hero-tiny-card>
+      </div>
+      
+    </div>
+
+  
+</div>

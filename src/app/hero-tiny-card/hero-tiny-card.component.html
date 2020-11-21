@@ -1,0 +1,12 @@
+<div class="container" routerLink="/hero">
+  <div class="infos">
+    <strong class="name">{{ infos.name }}</strong>
+    <p class="real-name">{{ infos.biography["full-name"] }}</p>
+  </div>
+
+  <img
+    src="{{ infos.image.url }}"
+    alt="Hero Image"
+    class="photo"
+  />
+</div>
