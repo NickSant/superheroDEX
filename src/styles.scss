@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+$primary: #1f5da3;
+$secondary: #d41131;
+
+* {
+    margin: 0;
+    border: none;
+    box-sizing: border-box; 
+}
+
+body{
+    font-size: 1.3vw;
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}

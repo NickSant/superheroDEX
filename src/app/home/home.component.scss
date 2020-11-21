@@ -1,0 +1,57 @@
+@use '../../styles.scss';
+
+.container {
+  width: 60vw;
+  padding: 2rem 0;
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    input.search-bar {
+      width: 85%;
+      height: 3.5rem;
+      background-color: lightgray;
+      border: 1px solid gray;
+      font-size: 1.8rem;
+      padding: 0.5rem 0.8rem;
+      border-radius: 10px;
+
+      &:focus {
+        border: 2px solid purple;
+        outline: 0;
+      }
+    }
+
+    button.search-button {
+      display: flex;
+      width: 10%;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 0.8rem;
+      background: styles.$primary;
+      border-radius: 10px;
+      height: 3.5rem;
+
+      img {
+        width: 80%;
+        height: 80%;
+        color: white;
+        fill: white;
+      }
+    }
+  }
+
+  h2 {
+    padding: 2rem 0;
+  }
+
+  .heroes-list {
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
